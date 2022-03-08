@@ -1,0 +1,40 @@
+.main_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.check{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #111;
+}
+
+.check.compl{
+    background: #000;
+}
+
+.itemToDO{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.itemToDO.complTodo{
+    background: rgba(0,0,0, .1);
+    position: relative;
+}
+
+.itemToDO.complTodo:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    width: 100%;
+    display: block;
+}
