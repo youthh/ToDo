@@ -1,0 +1,21 @@
+[data-amplify-authenticator]{
+    max-width: 100%;
+}
+
+.amplify-button[data-variation=primary]{
+    background-color: hsl(267deg 100% 50%);
+}
+
+.amplify-button[data-variation=primary]:hover{
+    background-color: hsl(267deg 100% 50%);
+}
+
+
+.amplify-tabs-item[data-state=active]{
+    color: hsl(267deg 100% 50%);
+    border-color: hsl(267deg 100% 50%);
+}
+
+.amplify-button[data-variation=link]{
+    color: hsl(267deg 100% 50%);
+}

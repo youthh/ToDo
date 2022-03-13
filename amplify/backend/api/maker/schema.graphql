@@ -1,7 +1,13 @@
+type Usersi @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  login: String
+  email: String
+}
+
 type Todo @model @auth(rules: [{allow: public}]) {
   id: ID!
-  name: String!
   description: String
   isCompleted: Boolean
+  userId: String
 }
  

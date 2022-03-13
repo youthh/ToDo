@@ -10,6 +10,11 @@
       "StackName": "amplify-maker-dev-191912",
       "StackId": "arn:aws:cloudformation:us-east-1:527568497875:stack/amplify-maker-dev-191912/e25c49a0-9f03-11ec-986e-12f243e972ed",
       "AmplifyAppId": "d3icafs5q1mlk7"
+    },
+    "categories": {
+      "auth": {
+        "maker": {}
+      }
     }
   }
 }

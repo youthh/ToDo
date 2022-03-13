@@ -1,3 +1,7 @@
+.show-todo {
+    width: 100%;
+    max-width: 600px;
+}
 .main_box{
     display: flex;
     flex-direction: column;
@@ -5,36 +9,62 @@
     align-items: center;
 }
 .check{
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 1px solid #111;
+    border-radius: 2px;
+    padding: 1px;
+    margin-right: 5px;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.check.compl{
+.compl{
     background: #000;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
 }
 
 .itemToDO{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .itemToDO.complTodo{
-    background: rgba(0,0,0, .1);
     position: relative;
 }
 
 .itemToDO.complTodo:after {
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 50%;
     height: 2px;
     background: rgba(0, 0, 0, 0.5);
     content: "";
-    width: 100%;
+    width: 97%;
     display: block;
+}
+
+.create-new-todo{
+    margin-bottom: 30px;
+}
+
+.items_todo{
+    display: flex;
+    align-items: center;
+}
+
+.btn_delete{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-left: 5px;
 }

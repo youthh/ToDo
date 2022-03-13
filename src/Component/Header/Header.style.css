@@ -1,0 +1,116 @@
+.cont{
+    background: #6a12d5;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 12px rgba(7, 7, 7, 0.6);
+    padding: 13px 5px;
+}
+
+.title{
+    margin: 0;
+
+    font-weight: 900;
+    color: #fdfdfd;
+    text-decoration: underline;
+}
+
+.btn_si{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
+
+
+}
+
+.profile_box{
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.img_profile{
+    padding-top: 1px;
+    margin-right: 10px;
+}
+
+.name_profile{
+    font-weight: 900;
+    padding-bottom: 3px;
+}
+
+.click_menu{
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    background-color: #8d8d8d;
+    padding: 10px;
+    top: 65px;
+   display:  none;
+    transition: .3s;
+}
+
+
+.click_menu.active {
+    display: block;
+}
+
+.switch-btn {
+
+    width: 55px; /* ширина */
+    height: 25px; /* высота */
+    border-radius: 19px; /* радиус скругления */
+    background: #d3d3d3; /* цвет фона */
+    z-index: 0;
+    margin: 14px  auto;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 400ms; /* анимация */
+}
+.switch-btn::after {
+    content: "";
+    height: 22px; /* высота кнопки */
+    width: 22px; /* ширина кнопки */
+    border-radius: 17px;
+    background: rgba(82, 29, 166, 0.99); /* цвет кнопки */
+    top: 1px; /* положение кнопки по вертикали относительно основы */
+    left: 3px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 500ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+
+}
+
+.switch-on:hover::after{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.switch-btn:hover::after{
+    box-shadow: 0 0 14px rgba(161, 0, 255, 0.9);
+}
+
+.switch-on {
+    background: #414141;
+}
+.switch-on::after {
+    left: 30px;
+    background-color: #666;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

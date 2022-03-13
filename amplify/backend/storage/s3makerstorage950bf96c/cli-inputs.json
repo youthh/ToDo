@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3makerstorage950bf96c",
+  "bucketName": "maker-storage-950bf96c",
+  "policyUUID": "acfcf2fe",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
