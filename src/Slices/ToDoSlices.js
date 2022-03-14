@@ -88,6 +88,7 @@ const ToDoSlices = createSlice({
     name: 'toDo',
 
     initialState: {
+        init: false,
         todo: [],
         isActiveMenu: false,
         isFetching: false,
@@ -133,6 +134,9 @@ const ToDoSlices = createSlice({
         },
         setMenu: (state) => {
             state.isActiveMenu = !state.isActiveMenu;
+        },
+        setInit: (state) => {
+            state.init = !state.init
         }
     },
 
@@ -173,8 +177,7 @@ const ToDoSlices = createSlice({
         },
 
         [getCurrentUserThunk.fulfilled]: (state, action) => {
-
-             action.payload[0].map((i) => {
+            action.payload[0].map((i) => {
                 if (i.email === action.payload[1]) {
 
                     state.user.id = i.id
@@ -188,6 +191,6 @@ const ToDoSlices = createSlice({
 })
 
 
-export const {setToDo,setCompletedItem, setMenu, setUser, addNewTodo, setModal, setTheme} = ToDoSlices.actions
+export const {setInit,setCompletedItem, setMenu, setUser, addNewTodo, setModal, setTheme} = ToDoSlices.actions
 
 export default ToDoSlices.reducer

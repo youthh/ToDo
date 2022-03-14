@@ -10,13 +10,11 @@ const ToDo = (props) => {
     return(
         <div className="main_box">
             <div className="create-new-todo">
-
-                <input ref={props.refText} placeholder="text..." type="text"/>
-                <button onClick={() => props.addTodo(props.refText, props.refName)} >add</button>
-                <button onClick={() => props.deleteAll()} >delete all</button>
+                <input className="input" ref={props.refText} placeholder="text..." type="text"/>
+                <button className="btn" onClick={() => props.addTodo(props.refText, props.refName)} >add</button>
             </div>
             <div>
-                <select ref={ref}  onChange={(e) => props.handleChange(e)}  name="box" id="d">
+                <select className="select" ref={ref}  onChange={(e) => props.handleChange(e)}  name="box" id="d">
                     <option selected="selected" value="2">All</option>
                     <option value="1">Completed</option>
                     <option value="0">Active</option>

@@ -10,6 +10,7 @@ import {
     completedTodoThunk, deleteOneToDo, setCompletedItem,
 } from "../../Slices/ToDoSlices";
 import {current} from "@reduxjs/toolkit";
+import {Alert} from "@aws-amplify/ui-react";
 
 
 
@@ -35,9 +36,12 @@ const ToDoContainer = () => {
     const addTodo = (text) => {
         let t = text.current.value;
 
-        dispatch(addNewToDoThunk({t, userId})).then(() => {
-            dispatch(getTodoThunk());
-        })
+        if (t !== '') {
+            dispatch(addNewToDoThunk({t, userId})).then(() => {
+                dispatch(getTodoThunk());
+            })
+        }
+
     }
 
     const setCompleted = (data, ref) => {
@@ -51,9 +55,7 @@ const ToDoContainer = () => {
         dispatch(getTodoThunk(value));
     }
 
-    useEffect( async ()  => {
 
-    }, [])
 
     return(
              <ToDo
