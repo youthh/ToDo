@@ -16,6 +16,17 @@
     border-color: hsl(267deg 100% 50%);
 }
 
+.amplify-tabs-item {
+    color: hsl(267deg 100% 50%) !important;
+    border-color: hsl(267deg 100% 50%);
+
+}
+
+
+
 .amplify-button[data-variation=link]{
     color: hsl(267deg 100% 50%);
+}
+.amplify-flex{
+    color: #fff;
 }

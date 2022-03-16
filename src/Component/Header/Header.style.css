@@ -50,6 +50,7 @@
 }
 
 .click_menu{
+    text-align: center;
     position: absolute;
     max-width: inherit;
     z-index: 1000;
@@ -139,7 +140,6 @@
     margin-top: 15px;
     width: 39px;
     height: 45px;
-    z-index: 5;
 }
 
 .hamburger div {
@@ -163,7 +163,7 @@
 .profile_box.active_prof .top-bun{
     transform: rotate(40deg);
     position: absolute;
-    top: 11px;
+    top: 12px;
 }
 
 .profile_box.active_prof .bottom-bun{
@@ -177,5 +177,16 @@
         display: flex;
         justify-content: space-between;
         padding: 13px 10px;
+    }
+
+    .profile_box{
+        right: 0;
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .click_menu{
+        width: 100%;
+        max-width: none;
     }
 }

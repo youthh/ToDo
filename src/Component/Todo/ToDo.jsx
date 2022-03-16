@@ -1,7 +1,7 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useRef} from "react";
 import './ToDo.style.css'
 import ToDoItem from "./ToDoItem";
-import {useDispatch, useSelector,} from "react-redux";
+
 import Load from "../Loader/Load";
 
 const ToDo = (props) => {
@@ -11,6 +11,7 @@ const ToDo = (props) => {
         <div className="main_box">
             <div className="create-new-todo">
                 <input className="input" ref={props.refText} placeholder="text..." type="text"/>
+
                 <button className="btn" onClick={() => props.addTodo(props.refText, props.refName)} >add</button>
             </div>
             <div>
@@ -35,7 +36,7 @@ const ToDo = (props) => {
                                             text={i.description}
                                             ref={ref}
                            />
-                       }) : <h2>No To do yet</h2>
+                       }) : <h2 className="no_todo-title">No To do yet</h2>
                 }
             </div>
         </div>

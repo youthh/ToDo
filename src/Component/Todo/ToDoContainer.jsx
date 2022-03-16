@@ -1,16 +1,14 @@
-import React, {useEffect, useRef} from "react";
+import React, { useRef} from "react";
 import ToDo from "./ToDo";
 import {useDispatch, useSelector} from "react-redux";
 import {
-    addNewTodo,
+
     getTodoThunk,
     deleteToDo,
 
     addNewToDoThunk,
     completedTodoThunk, deleteOneToDo, setCompletedItem,
 } from "../../Slices/ToDoSlices";
-import {current} from "@reduxjs/toolkit";
-import {Alert} from "@aws-amplify/ui-react";
 
 
 

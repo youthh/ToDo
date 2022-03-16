@@ -137,6 +137,12 @@ const ToDoSlices = createSlice({
         },
         setInit: (state) => {
             state.init = !state.init
+        },
+        deleteUser: (state) => {
+            state.auth = false
+            state.user.email = null
+            state.user.login = null
+            state.user.id = null
         }
     },
 
@@ -191,6 +197,6 @@ const ToDoSlices = createSlice({
 })
 
 
-export const {setInit,setCompletedItem, setMenu, setUser, addNewTodo, setModal, setTheme} = ToDoSlices.actions
+export const {deleteUser, setInit,setCompletedItem, setMenu, setUser, addNewTodo, setModal, setTheme} = ToDoSlices.actions
 
 export default ToDoSlices.reducer

@@ -137,3 +137,22 @@
     border-color: #fff;
 }
 
+.no_todo-title{
+    background-color: #6a12d5;
+    color: #ffffff;
+    width: 168px;
+    margin: 30px auto 0 auto;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+
+/* dark */
+
+.text-dark{
+    color: #fff;
+}
+
+.compl.dark{
+    background: #fff;
+}

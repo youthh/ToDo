@@ -1,6 +1,6 @@
 import React from "react";
 import {PersonCircle} from "react-bootstrap-icons";
-import {setTheme} from "../../Slices/ToDoSlices";
+import {deleteUser, setMenu, setTheme} from "../../Slices/ToDoSlices";
 import {useAuthenticator, withAuthenticator} from "@aws-amplify/ui-react";
 import {useDispatch} from "react-redux";
 
@@ -21,6 +21,8 @@ const MenuBG = (props) => {
             </div>
             <button className="btn" onClick={() => {
                 signOut()
+                dispatch(setMenu())
+                dispatch(deleteUser())
             }}>Log out
             </button>
 

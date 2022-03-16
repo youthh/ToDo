@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.style.css"
-import {setMenu, setModal, setTheme} from "../../Slices/ToDoSlices";
+import {setMenu, setModal} from "../../Slices/ToDoSlices";
 import {useDispatch, useSelector} from "react-redux";
 import MenuBG from "./Menu";
 
@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div className="cont">
 
-            <h1 className="title">ToDo Maker</h1>
+            <h1 className="title">ToDoMaker</h1>
             {
                 isAuth ? <div className={isMenu ? "profile_box active_prof" : "profile_box"} >
                        <div onClick={() => dispatch(setMenu())} className="profile">
